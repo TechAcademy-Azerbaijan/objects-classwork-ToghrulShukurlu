@@ -11,5 +11,12 @@ let products = [
 ]
 
 let foods = ['Apple', 'Avocados', 'Cherry', 'Orange', 'Kiwi']
+let sum = 0;
 
-// write code here
+for(let obj of products){
+    if(foods.includes(obj.title)){
+        sum=sum+obj.weight;
+        
+    }
+}
+console.log(sum);
